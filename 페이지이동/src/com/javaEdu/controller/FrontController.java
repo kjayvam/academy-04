@@ -95,6 +95,7 @@ public class FrontController extends HttpServlet {
 			//5. return 값이 1이면 DB insert 성공함.
 			if (ri == 1) {
 				System.out.println("회원가입 성공");
+				//6. 회원가입 성공 했으면 메인페이지로 이동
 				response.sendRedirect("../content/main.jsp");
 			} else {
 				System.out.println("회원가입 실패");
